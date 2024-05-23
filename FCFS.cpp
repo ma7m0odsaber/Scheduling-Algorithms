@@ -41,7 +41,7 @@ void Scheduler::runFCFS(vector<PCB> processes)
 		processingHistory.push_back(executionSlice);
 		runningProcess.remainingTime = 0;
 
-        cpuIdleTime += executionSlice.startTime - currentTime;
+                cpuIdleTime += executionSlice.startTime - currentTime;
 		currentTime = executionSlice.endTime;
 		totalRunningTime += runningProcess.burstTime;
 
